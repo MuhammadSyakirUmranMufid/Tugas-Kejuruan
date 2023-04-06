@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jam digital JavaScript</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <center>
+      <h1>Membuat Jam Digital Dengan JavaScript</h1>
+      <h2>Hasil Karya Muhammad Syakir Umran Mufid</h2>
+    </center>
+
+    <div class="jam-digital">
+      <div class="kotak">
+        <p id="jam"></p>
+      </div>
+      <div class="kotak">
+        <p id="menit"></p>
+      </div>
+      <div class="kotak">
+        <p id="detik"></p>
+      </div>
+    </div>
+    <script>
+      window.setTimeout("waktu()", 1000);
+
+      function waktu() {
+        var waktu = new Date();
+        setTimeout("waktu()", 1000);
+        document.getElementById("jam").innerHTML = waktu.getHours();
+        document.getElementById("menit").innerHTML = waktu.getMinutes();
+        document.getElementById("detik").innerHTML = waktu.getSeconds();
+      }
+    </script>
+  </body>
+</html>

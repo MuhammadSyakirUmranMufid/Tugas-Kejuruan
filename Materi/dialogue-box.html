@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dialog alert</title>
+  </head>
+  <body>
+    <script>
+      // dialog alert()
+      alert("Mari belajar dialogue box di JS");
+
+      // dialog prompt()
+      var nama = prompt("Siapa Nama Kamu?", "");
+
+      // dialog confirm()
+      var yakin = confirm("Apakah kamu yakin mau lanjut?");
+
+      if (yakin) {
+        document.write("<p>Hello selamat datang " + nama);
+      } else {
+        document.write(nama + " kamu tidak akan kemana-mana");
+      }
+    </script>
+  </body>
+</html>

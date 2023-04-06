@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Lks Perulangan - Cetak Perulanga</h1>
+    <hr>
+    <form>
+        <table>
+            <th>Counted Loop</th>
+            <th style="width: 18%"></th>
+            <th>Uncounted Loop</th>
+            <tr>
+                <td>
+                    1. Perulangan For <br>
+                    2. Perulangan Foreach <br>
+                    3. Perulangan Repeat <br>
+                </td>
+                <td></td>
+                <td>
+                    4. Perulangan While <br>
+                    5. Perulanga Do/While <br>
+                </td>
+            </tr>
+            <tr>
+                <td><br></td>
+            </tr>
+
+            <tr>
+                <td><label for="noPerulangan">Jenis Perulangan</label></td>
+                <td></td>
+                <td>
+                    <input type="text"
+                    id="noPerulangan"
+                    name="noPerulangan"
+                    placeholder="Contoh: 1">
+                </td>
+            </tr>
+
+            <tr>
+                <td><label for="bilAwal">Bilangan Awal</label></td>
+                <td></td>
+                <td>
+                    <input type="text"
+                    id="bilAwal"
+                    name="bilAwal"
+                    placeholder="Contoh: 10">
+                </td>
+            </tr>
+
+            <tr>
+                <td><label for="bilAkhir">Bilangan Akhir</label></td>
+                <td></td>
+                <td>
+                    <input type="text"
+                    id="bilAkhir"
+                    name="bilAkhir"
+                    placeholder="Contoh: 100">
+                </td>
+            </tr>
+        </table>
+    </form>
+    
+
+
+
+    <input type="button" value="Submit" onclick="jenisPercabangan()">
+    <hr>
+    <p id="outJudul"></p>
+    <p id="outDeskripsi"></p>
+    <p id="outPerulangan"></p>
+
+    <script src="perulangan.js"></script>
+</body>
+</html>
